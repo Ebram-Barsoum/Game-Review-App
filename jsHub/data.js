@@ -30,11 +30,13 @@ export default class Data {
     }
 
     get_games(callback, category = 'mmorpg') {
+        games.hide();
         animation.run();
         this.URL = `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}&sort-by=release-date`;
         this.#call_API().then(data => {
             display.display_games(data);
             animation.stop();
+            games.show();
             callback();
             
         });
