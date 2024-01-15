@@ -1,0 +1,158 @@
+/******** Global || Variables *******/
+:root{
+   --main-color: #212529;
+   --alt-color:#3A497B;
+   --text-color: #fff;
+   --transition-time: .5s;
+}
+/****** General || Style ******/
+body{
+    background-color: var(--main-color) !important;
+    font-family:  'Comfortaa', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Nerko One', cursive !important;
+    
+}
+.top-35{
+    top: 35px !important;
+}
+/******* image || Part ******/
+.image{
+    width: 100%;
+    height: 35dvh;
+
+    background: linear-gradient(to right,#212529ce,#212529ce),url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/******** navbar || Part *******/
+.content{
+    background-color: var(--main-color);
+   
+}
+.navbar{
+    width: 100%;
+    z-index: 1;
+}
+.navbar .container{
+    background-color: var(--alt-color);
+    color:var(--text-color) ;
+
+    transform: translateY(-35px);
+    -webkit-transform: translateY(-35px);
+    -moz-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    -o-transform: translateY(-35px);
+}
+.navbar .navbar-brand{
+    font-family: 'Nerko One', cursive;
+    font-weight: 500;
+    color:var(--text-color) ;
+}
+.navbar .navbar-brand .logo-image{
+    height: 40px;
+    width: 40px;
+}
+
+.navbar .nav-link{
+    color: var(--text-color);
+    font-size: 14px !important;
+}
+.navbar .nav-link.active{
+    color:#09c !important;
+    transition: var(--transition-time);
+    -webkit-transition:var(--transition-time);
+    -moz-transition:var(--transition-time);
+    -ms-transition:var(--transition-time);
+    -o-transition:var(--transition-time);
+}
+.navbar .nav-link:hover{
+    color:#09c !important;
+}
+
+/******** Games || Part *******/
+.card{
+    background-color: var(--main-color) !important;
+    color:var(--text-color);
+    transition: var(--transition-time);
+    -webkit-transition: var(--transition-time);
+    -moz-transition: var(--transition-time);
+    -ms-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+    font-family: 'Nerko One', cursive;
+    cursor: pointer;
+}
+.card img{
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+
+    transition: var(--transition-time);
+    -webkit-transition: var(--transition-time);
+    -moz-transition: var(--transition-time);
+    -ms-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+}
+.card:hover{
+    scale:1.06;
+}
+.card:hover img{
+    filter:none;
+    -webkit-filter:none;
+    
+}
+
+.card .card-title .text{
+    font-size: 22px !important;
+    height: 25px;
+    overflow: hidden;
+}
+.card .btn{
+    background-color: var(--alt-color);
+    color:var(--text-color);
+    transition: var(--transition-time);
+    -webkit-transition: var(--transition-time);
+    -moz-transition: var(--transition-time);
+    -ms-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+
+    height: fit-content;
+}
+.card:hover .btn{
+    background-color: #09c;
+}
+.card .card-text{
+    height: 40px !important;
+    overflow: hidden;
+}
+
+.card .tags > *{
+    background-color: #555 !important;
+}
+
+/***** Details || Part *****/
+.details {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100dvh;
+    z-index: 2;
+}
+.details .badge{
+    background-color: var(--alt-color) !important;
+}
+.details .description{
+    font-size: 13px !important;
+}
+.details .more-btn{
+    border-color: var(--alt-color);
+    transition: var(--transition-time);
+    -webkit-transition: var(--transition-time);
+    -moz-transition: var(--transition-time);
+    -ms-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+}
+.details .more-btn:hover{
+    background-color: var(--alt-color);
+}
